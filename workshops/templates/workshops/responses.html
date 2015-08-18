@@ -1,0 +1,134 @@
+{% load staticfiles %}
+{% load widget_tweaks %}
+
+<html>
+
+
+	<head>
+        <link href="/static/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+
+        <script src="/static/js/jquery-2.1.1.min.js"></script>
+        <script src="/static/js/bootstrap.min.js"></script>
+        <title>Responses</title>
+        <style>
+        	@font-face {
+		    font-family: 'Code Bold';
+		    src: url('/static/fonts/Code-Bold/CODE_Bold.eot?') format('eot'), url('/static/fonts/Code-Bold/CODE_Bold.woff') format('woff'), url('/static/fonts/Code-Bold/CODE_Bold.ttf') format('truetype');
+		}
+
+		@font-face {
+		    font-family: 'Century Gothic';
+		    src: url('/static/fonts/gothic/gothic.eot?') format('eot'), url('/static/fonts/gothic/gothic.woff') format('woff'), url('/static/fonts/gothic/gothic.ttf') format('truetype');
+		}
+
+        	body{
+        		background-color: #A3C1DA;
+        	}
+
+        	body,h2,h3,h4,h5,h6{
+    font-family: 'Century Gothic', sans!important;
+}
+
+h1{
+    font-size: 40px;
+    font-family: 'Code Bold', sans!important;
+    //text-align: justify;
+}
+
+		p{
+			font-size: 16px;
+			text-align: justify;
+		}
+
+        	.panel-default>.panel-heading{
+        		border-color: #47AADF;
+        		background-color: #fff;
+        	}
+
+        	.panel-heading img{
+        		height: auto;
+        		max-width: 300px;
+        		max-height:100px;
+        	}
+			
+			.panel-heading{
+				height: 120px;
+			}
+			
+			#heading_bzwbk.panel-heading img{
+				margin-top: 15px;
+			}
+
+        	.panel-heading a{
+        		display:block;
+        	}
+
+        	.first-row{
+        		margin:0px!important;
+        	}
+
+        	.right{
+        		float:right;
+        		padding-top: 30px;
+        		text-align: right;
+        	}
+        	
+        	.left{
+        		float:left;
+        		padding-top:30px;
+        	}
+        	
+        	.panel-heading .help-block{
+        		font-size: 16px;
+        	}
+
+        	.panel-title{
+        		font-size: 30px;
+        	}
+        	
+        	.clearfix:after { 
+   content: " ";
+   display: block; 
+   height: 0; 
+   clear: both;
+}
+        </style>
+	</head>
+	<body>
+      <h1>Worshkop registration responses</h1>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Surname</th>
+            <th>e-mail</th>
+            <th>University/Institution</th>
+            <th>Graduation year</th>
+            <th>1st choice</th>
+            <th>2nd choice</th>
+            <th>3rd choice</th>
+            <th>CV</th>
+          </tr>
+        </thead>
+        <tbody>
+      {% for response in responses %}
+       
+           <tr>
+            <td>{{response.name}}</td>
+            <td>{{response.surname}}</td>
+            <td>{{response.email}}</td>
+            <td>{{response.uni}}</td>
+            <td>{{response.graduation}}</td>
+            <td>{{response.w_1}}</td>
+            <td>{{response.w_2}}</td>
+            <td>{{response.w_3}}</td>
+            <td><a href="/static/media/{{response.cv}}">{{response.cv}}</a></td>
+          </tr>
+
+        
+      {%endfor%}
+			
+        </tbody>
+      </table>
+	</body>
+</html>

@@ -1,0 +1,16 @@
+from django.shortcuts import render, get_object_or_404
+from django.http import HttpResponse, HttpResponseRedirect
+from django.http import Http404
+
+from workshops.forms import WorkshopRegisterForm
+
+def workshop(request):
+	if request.method == 'POST':
+		form = WorkshopRegisterForm(request.POST, request.FILES)
+		if form.is_valid():
+			workshop = orm.save()
+			return render(request, 'workshops/success.html', { 'workshop' : workshop })
+	else:
+		form = WorkshopRegisterForm()
+
+	return render(request, 'workshops/main.html', {'form':form})

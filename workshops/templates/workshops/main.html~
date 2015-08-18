@@ -1,0 +1,261 @@
+{% load staticfiles %}
+{% load widget_tweaks %}
+
+<html>
+
+
+	<head>
+        <link href="/static/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+
+        <script src="/static/js/jquery-2.1.1.min.js"></script>
+        <script src="/static/js/bootstrap.min.js"></script>
+
+        <style>
+        	@font-face {
+		    font-family: 'Code Bold';
+		    src: url('/static/fonts/Code-Bold/CODE_Bold.eot?') format('eot'), url('/static/fonts/Code-Bold/CODE_Bold.woff') format('woff'), url('/static/fonts/Code-Bold/CODE_Bold.ttf') format('truetype');
+		}
+
+		@font-face {
+		    font-family: 'Century Gothic';
+		    src: url('/static/fonts/gothic/gothic.eot?') format('eot'), url('/static/fonts/gothic/gothic.woff') format('woff'), url('/static/fonts/gothic/gothic.ttf') format('truetype');
+		}
+
+        	body{
+        		background-color: #A3C1DA;
+        	}
+
+        	body,h2,h3,h4,h5,h6{
+    font-family: 'Century Gothic', sans!important;
+}
+
+h1{
+    font-size: 40px;
+    font-family: 'Code Bold', sans!important;
+    //text-align: justify;
+}
+
+		p{
+			font-size: 16px;
+			text-align: justify;
+		}
+
+        	.panel-default>.panel-heading{
+        		border-color: #47AADF;
+        		background-color: #fff;
+        	}
+
+        	.panel-heading img{
+        		height: auto;
+        		max-width: 300px;
+        		max-height:100px;
+        	}
+			
+			.panel-heading{
+				height: 120px;
+			}
+			
+			#heading_bzwbk.panel-heading img{
+				margin-top: 15px;
+			}
+
+        	.panel-heading a{
+        		display:block;
+        	}
+
+        	.first-row{
+        		margin:0px!important;
+        	}
+
+        	.right{
+        		float:right;
+        		padding-top: 30px;
+        	}
+        	
+        	.left{
+        		float:left;
+        		padding-top:30px;
+        	}
+        	
+        	.panel-heading .help-block{
+        		font-size: 16px;
+        	}
+
+        	.panel-title{
+        		font-size: 30px;
+        	}
+        	
+        	.clearfix:after { 
+   content: " ";
+   display: block; 
+   height: 0; 
+   clear: both;
+}
+        </style>
+	</head>
+	<body>
+		<div class="row first-row">
+		{{form.error}}
+			<div class="col-md-6 col-md-offset-3">
+			<img src="/static/img/nsp.png" class="img-responsive" /> 
+			<h1 align="center">
+			Workshop registration
+			</h1>
+			<p>This workshop registration is only available for the NEXT STEP: Poland participants who received the confirmation of their tickets booking. If you have any questions, please email us: cupolsoc@gmail.com.</p>
+				<p>
+				Partners of the Next Step: Poland prepared workshop sessions covering a range of topics. Below you will find descriptions, so that you will be able to make an informed decision based on your interests and future career plans. Please remember that each participant is entitled to and strongly encouraged to submit choices. Otherwise, you will be assigned randomly. <b>The deadline for submitting the form is Tuesday, 27/01 at 3pm</b>. Submitting your CV is optional but choosing not to do so may put you at a disadvantage; some companies may conduct the CV-screenings.</p>
+
+			<h3>Click on one of the bars, to find more information about each workshop</h3>
+				<div class="panel-group" id="workshops" role="tablist" aria-multiselectable="true">
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="heading_bain">
+      <h2 class="panel-title">
+        <a data-toggle="collapse" data-parent="#workshops" href="#bain" aria-expanded="true" aria-controls="bain">
+          <img src="/static/img/bain.png" /> <span class="right">Bain&Company</span>
+        </a>
+      </h2>
+    </div>
+    <div id="bain" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading_bain">
+      <div class="panel-body">
+      <p>
+        At Bain, we help the world’s top leaders solve their toughest challenges. Our work
+fuels the growth of many industries and positively impacts countless lives. We do not beat about the bush, we are perpetually result-oriented.</p>
+<p> 
+Want to take a glimpse into how we build our success story? Join our problem solving session at Next Step Poland!
+During our workshop you will participate in an assignment that will present a unique</p>
+<p>
+chance to develop solutions to real-world problems and gain versatile skills. You will solve a real Bain case, role-play with a client and present your solutions, as real consultants do. At the end you’ll understand what it feels to be a Bainie and to make a difference – for our clients, our futures and our world. The workshop will have a form of a team challenge and while all teams will receive gifs, the best challengers will be rewarded for their great work with special prizes– as Bain always recognizes and appreciates the great work that our consultants put in! </p>
+<p>
+Bain workshop will be run by a team of high achievers with outstanding qualities, all part of Bain Warsaw/CEE office who are passionate about sharing their best knowledge and international experience in various industry sectors with you:</p><p>
+Marek Kośnik, Manager, HBS/MBA <br />
+Marcin Kopczyński, Senior Associate Consultant, London School of Economics <br/>
+Julia Jaskólska, Associate Consultant, MIT and Cambridge University <br /></p><p>
+We have got what you're looking for: challenging tasks, generous opportunities for self-fulfillment and tons of fun. Looking forward to meeting you there!</p>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="heading_pwc">
+      <h2 class="panel-title">
+        <a data-toggle="collapse" data-parent="#workshops" href="#pwc" aria-expanded="true" aria-controls="pwc">
+          <img src="/static/img/pwc.jpeg" /> <span class="right">PwC</span>
+        </a>
+      </h2>
+    </div>
+    <div id="pwc" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading_pwc">
+      <div class="panel-body">
+   <h4>Strategic Storytelling</h4>
+<h4>How to build powerful presentations</h4>
+<p>We invite you to a workshop on one of the core consulting skill – structuring presentations that convey the right message in the most effective way.</p>
+<p>We will tell you:
+<ul><li>how to structure your presentation right depending on the audience</li>
+<li>how to best support your conclusions with convincing analysis </li>
+<li>how to avoid weak spots</li></ul></p><p>
+You will have the opportunity to practice structuring powerful presentations and learn insights from our project work. Find out more about logical chains and groups, CECE, storyboards, pyramids and steel mill restructuring.</p>
+<h4>How can you benefit?</h4><p>
+<ul><li>Learn the core skill for the job interviews and any other presentation – the rest is body language and smiles</li>
+<li>Find out why less is sometimes more and how management consulting differs from academia</li>
+<li>Get hands-on experience in structuring ideas into effective arguments
+</li></ul></p>
+<p>
+Workshop will be run by Stanisław Karcz – Senior Consultant at PwC Strategy team, MPhil in Economics (Fitzwilliam College, Cambridge) and Gaweł Adamek – Senior Consultant at PwC Strategy Team, MPhil in Economics (King’s College, Cambridge).</p>
+<p>We will show the difference between academic and business argumentation based on our experience. We did both, we can tell the difference.</p>
+      </div>
+    </div>
+  </div>
+<div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="heading_bzwbk">
+      <h2 class="panel-title">
+        <a data-toggle="collapse" data-parent="#workshops" href="#bzwbk" aria-expanded="true" aria-controls="bzwbk">
+          <img src="/static/img/bzwbk.jpg" /> <span class="right">Bank Zachodni WBK</span>
+        </a>
+      </h2>
+    </div>
+    <div id="bzwbk" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading_bzwbk">
+      <div class="panel-body">
+     <h4>Bank Zachodni WBK – a good place for your professional career </h4>
+<p>
+The workshops organised by Bank Zachodni WBK will cover mock interviews with volunteers. Those of you who decide to take part in the workshop will first receive written information about the task, the time needed for preparation and its completion. 
+</p>
+<p>
+The interviews will help us to identify and jointly discuss our expectations from candidates, the skills we are looking for and the factors which make us select a specific person for a given job.
+</p><p>
+The banking industry is a perfect place for people with different educational backgrounds – it is a good place to start a career for people having a degree in economy, management, mathematics, psychology, marketing, legal studies or other fields. The most important thing to us is your skills and qualifications.
+</p><p>
+Each person taking part in a mock interview will be provided with feedback at a pre-agreed time after the workshop. The received comments will help you to identify your strengths and weaknesses for your future job seeking purposes. During the feedback session, you will also have an opportunity to learn how to plan your professional development to be more competitive on the job market. 
+</p><p>
+Workshop will be run by Beata Pietrzykowska-Stachnik - Head of the Recruitment and Outplacement in Bank Zachodni WBK. 
+</p><h4>
+Please feel invited to our workshop!</h4>
+    </div>
+  </div>
+</div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="heading_uber">
+      <h2 class="panel-title">
+        <a data-toggle="collapse" data-parent="#workshops" href="#uber" aria-expanded="true" aria-controls="uber">
+          <img src="/static/img/uber.png" /> <span class="right">Uber</span>
+        </a>
+      </h2>
+    </div>
+    <div id="uber" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading_uber">
+      <div class="panel-body">
+     <h4>Uber Expansion</h4>
+
+<h4>An insight in the Uber mindset</h4>
+
+<p>In this workshop we will tell you more about Uber and the different type of roles we have in our cities and markets. Learn more about running a start-up, expansion, growing a city, supply, marketing, competitors, products, pricing and on demand stunts.</p>
+
+<p>We will then ask you to think with us on a strategic level on a couple of cases and the expansion to new cities. You'll work in small teams to do your research and present your findings.</p>
+
+<p>Workshop will be run by Nicolas Buteau – Recruitment Manager EMEA, Kacper Winiarczyk – Operations Manager Warsaw and Agnieszka Hibbert – Paralegal.</p>
+    </div>
+  </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="heading_martap">
+      <h2 class="panel-title">
+        <a data-toggle="collapse" data-parent="#workshops" href="#martap" aria-expanded="true" aria-controls="martap" class="clearfix">
+          <span class="left">Career sessions</span><span class="right">Marta Poślad <span class="help-block">Senior Policy Analyst, Google</span></span>
+        </a>
+      </h2>
+    </div>
+    <div id="martap" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading_martap">
+      <div class="panel-body">
+    <h4>Career Session: How to Make Most of Being a Curious Social Scientist on the Job Market</h4>
+<p>
+The workshop will be run by Marta Poslad, who works in the department of public policy at Google, where she analyzes social impact of new technologies in Central and Eastern Europe and represents the company in front of the policymakers. Marta is a political scientist and sociologist, graduate of Warsaw University and University of Cambridge. In 2005 she co-founded Wybieram.pl, the first Polish get-out-the-vote initiative. Marta is a Humanity in Action Senior Fellow and a graduate of Helsinki Foundation for Human Rights' programme. As a scholar, she investigates electoral systems, democratization processes and realization of democratic ideals in modern societies.</p>
+    </div>
+  </div>
+</div>
+<p>You can submit up to 3 choices, in an order of preference (1 – the most preferred, 3 –the least preferred)</p>
+<h3>Workshop registration:</h3>
+<span class="help-block">Fields marked with * are required</span>
+
+
+				 <form action="" method="post" enctype="multipart/form-data" role="form" class="form-horizontal">
+                        {% csrf_token %}
+                         {% for field in form %}
+				            <div class="form-group {%if field.errors %}has-feedback has-error{%endif%}">
+				                <label for="{{field.id_for_label}}" class="col-xs-4 col-xs-offset-1 control-label">
+				                    {{field.label}}{%if field.field.required%}*{%else%}{%endif%}
+				                </label>
+				                <div class="col-xs-6">
+				                     {% render_field field placeholder=field.label class='form-control' autocomplete='off'%}
+				                     <span class="help-block">{{field.help_text}}</span>
+				                     {% for error in field.errors %}
+				                         <span class="help-block">{{error}}</span>
+				                    {% endfor %}
+				                </div>
+				            </div>
+				        {% endfor %}
+                         <div class="form-group">
+                            <div class="col-xs-6 col-xs-offset-5">
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </div>
+                         </div>
+                    </form>
+			</div>
+		</div>
+	</body>
+</html>

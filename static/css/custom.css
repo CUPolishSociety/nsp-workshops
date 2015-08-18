@@ -1,0 +1,13 @@
+#body {
+    width: 800px;
+    margin: 0 auto;
+    background-color: red;
+}
+
+.asteriskField {
+    display: none;
+}
+
+.profile-update {
+    display: none;
+}

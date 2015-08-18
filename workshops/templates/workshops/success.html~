@@ -1,0 +1,96 @@
+{% load staticfiles %}
+{% load widget_tweaks %}
+
+<html>
+
+
+	<head>
+        <link href="/workshops/static/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+
+        <script src="/workshops/static/js/jquery-2.1.1.min.js"></script>
+        <script src="/workshops/static/js/bootstrap.min.js"></script>
+
+        <style>
+        	@font-face {
+		    font-family: 'Code Bold';
+		    src: url('/workshops/static/fonts/Code-Bold/CODE_Bold.eot?') format('eot'), url('/workshops/static/fonts/Code-Bold/CODE_Bold.woff') format('woff'), url('/workshops/static/fonts/Code-Bold/CODE_Bold.ttf') format('truetype');
+		}
+
+		@font-face {
+		    font-family: 'Century Gothic';
+		    src: url('/workshops/static/fonts/gothic/gothic.eot?') format('eot'), url('/workshops/static/fonts/gothic/gothic.woff') format('woff'), url('/workshops/static/fonts/gothic/gothic.ttf') format('truetype');
+		}
+
+        	body{
+        		background-color: #A3C1DA;
+        	}
+
+        	body,h2,h3,h4,h5,h6{
+    font-family: 'Century Gothic', sans!important;
+}
+
+h1{
+    font-size: 40px;
+    font-family: 'Code Bold', sans!important;
+    //text-align: justify;
+}
+
+		p{
+			font-size: 16px;
+			text-align: justify;
+		}
+
+        	.panel-default>.panel-heading{
+        		border-color: #47AADF;
+        		background-color: #fff;
+        	}
+
+        	.panel-heading img{
+        		height: auto;
+        		max-width: 300px;
+        		max-height:100px;
+        	}
+
+        	.panel-heading a{
+        		display:block;
+        	}
+
+        	.first-row{
+        		margin:0px!important;
+        	}
+
+        	.right{
+        		float:right;
+        		padding-top: 30px;
+        	}
+
+        	.panel-title{
+        		font-size: 30px;
+        	}
+        </style>
+	</head>
+	<body>
+		<div class="row first-row">
+			<div class="col-md-6 col-md-offset-3">
+			<img src="/workshops/static/img/nsp.png" class="img-responsive" /> 
+			<h1 align="center">
+			Workshop registration
+			</h1>
+			
+			<p>
+				Dear {{workshop.name}}!
+			</p>
+			<p>
+				You have successfully submitted your workshop registration. The information about which workshop will you be assigned to, will be sent to your email address on the 29th of January.
+			</p>
+			<p>
+				Thanks for registration, see you at the Next Step: Poland!
+			</p>
+			<p>
+				The Next Step: Poland team.
+			</p>
+			
+			</div>
+		</div>
+	</body>
+</html>
